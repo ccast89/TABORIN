@@ -6,6 +6,8 @@
 }
 body {
   color: var(--color-secundario);
+  background-image: url(../assets/fondo.webp);
+  background-size: cover;
 }
 textarea {
   height: 20vh;
