@@ -10,3 +10,7 @@ body {
 textarea {
   height: 20vh;
 }
+.btn {
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
