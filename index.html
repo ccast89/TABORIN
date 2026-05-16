@@ -22,18 +22,18 @@
   </head>
   <body>
     <header></header>
-    <main class="container">
-      <section class="row">
+    <main class="container px-4">
+      <section class="row text-center">
         <h1 class="col">Club TABORIN</h1>
       </section>
-      <section class="row">
+      <section class="row text-center">
         <h2 class="col">CONTACTO</h2>
       </section>
       <section class="row">
         <h3 class="col">Dejános tu consulta</h3>
       </section>
       <section class="">
-        <form action="" class="row g-3 my-2 p-2">
+        <form action="" class="row g-3 my-2 p-2 needs-validation" novalidate>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="nombre" class="form-label fw-bold">Nombre</label>
             <input
@@ -44,6 +44,7 @@
               aria-label="Nombre"
               required
             />
+            <div class="invalid-feedback">Por favor, escribe tu nombre</div>
           </div>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="nombre" class="form-label fw-bold"
@@ -57,6 +58,7 @@
               aria-label="email"
               required
             />
+            <div class="invalid-feedback">El email no es válido</div>
           </div>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="telefono" class="form-label fw-bold">Teléfono</label>
@@ -68,12 +70,15 @@
               aria-label="telefono"
               required
             />
+            <div class="invalid-feedback">
+              Ingresa un número de teléfono válido
+            </div>
           </div>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="asunto" class="form-label fw-bold"
               >Motivo de la consulta</label
             >
-            <select class="form-select" name="asunto" id="asunto">
+            <select class="form-select" name="asunto" id="asunto" novalidate>
               <option selected>Selecciona una opción</option>
               <option value="1">Equipo Masculino</option>
               <option value="2">Equipo Femenino</option>
@@ -92,9 +97,10 @@
               placeholder="Dejá tu mensaje aquí y te responderemos"
               required
             ></textarea>
+            <div class="invalid-feedback">Por favor, escribe tu mensaje</div>
           </div>
           <div class="d-grid gap-2 mx-auto d-md-block d-md-flex mb-2">
-            <a class="btn col-md-2" href="#" role="button">Enviar</a>
+            <input class="btn col-md-2" type="submit" value="Enviar" />
             <input class="btn col-md-2" type="reset" value="Borrar" />
           </div>
         </form>
@@ -121,5 +127,30 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false,
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
