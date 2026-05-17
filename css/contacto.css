@@ -17,8 +17,13 @@ textarea {
   background-color: var(--color-secundario);
   color: var(--color-principal);
 }
-form {
+form,
+.card {
   background: rgba(43, 45, 47, 0.2);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+iframe {
+  width: 100%;
 }
