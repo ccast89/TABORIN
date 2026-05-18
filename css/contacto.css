@@ -1,0 +1,29 @@
+:root {
+  --color-principal: #1b4d2e;
+  --color-secundario: #f5f5f5;
+  --color-detalles: #000000;
+  --fuente-club: "Zilla Slab", serif;
+}
+body {
+  color: var(--color-secundario);
+  background-image: url(../assets/fondo.webp);
+  background-size: cover;
+}
+
+textarea {
+  height: 20vh;
+}
+.btn {
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
+form,
+.card {
+  background: rgba(43, 45, 47, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+iframe {
+  width: 100%;
+}
