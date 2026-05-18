@@ -30,3 +30,7 @@ h3 {
     width: 60px;
     padding: 0px;
 }
+.navbar{
+  position: fixed;
+  width: 100%;
+}
