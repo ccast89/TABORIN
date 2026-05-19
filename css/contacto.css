@@ -15,14 +15,30 @@ textarea {
 .btn {
   background-color: var(--color-secundario);
   color: var(--color-principal);
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
 }
+.btn:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-detalles);
+  border: 2px solid var(--color-principal);
+}
+.btn:active {
+  transform: scale(0.95);
+  background-color: var(--color-secundario);
+}
+
 form,
 .card {
   background: rgba(43, 45, 47, 0.2);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
-
+form {
+  label {
+    color: var(--color-secundario);
+  }
+}
 iframe {
   width: 100%;
 }
