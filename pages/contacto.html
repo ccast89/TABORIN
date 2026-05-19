@@ -22,7 +22,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/contacto.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
   </head>
@@ -244,8 +243,8 @@
             <label for="asunto" class="form-label fw-bold"
               >Motivo de la consulta</label
             >
-            <select class="form-select" name="asunto" id="asunto">
-              <option selected disabled>Selecciona una opción</option>
+            <select class="form-select" name="asunto" id="asunto" required>
+              <option selected disabled value="">Selecciona una opción</option>
               <option value="1">Equipo Masculino</option>
               <option value="2">Equipo Femenino</option>
               <option value="3">Equipo Niños</option>
@@ -266,7 +265,13 @@
             <div class="invalid-feedback">Por favor, escribe tu mensaje</div>
           </div>
           <div class="d-grid gap-2 mx-auto d-md-block d-md-flex mb-2">
-            <input class="btn col-md-2 boton" type="submit" value="Enviar" />
+            <div id="alerta"></div>
+            <input
+              class="btn col-md-2 boton"
+              type="submit"
+              value="Enviar"
+              id="boton-alerta"
+            />
             <input class="btn col-md-2 boton" type="reset" value="Borrar" />
           </div>
         </form>
@@ -311,6 +316,43 @@
               }
 
               form.classList.add("was-validated");
+            },
+            false,
+          );
+        });
+      })();
+    </script>
+    <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        const alertPlaceholder = document.getElementById("alerta");
+        const appendAlert = (message, type) => {
+          alertPlaceholder.innerHTML = "";
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+            `   <div>${message}</div>`,
+            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            "</div>",
+          ].join("");
+          alertPlaceholder.append(wrapper);
+        };
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              event.preventDefault();
+              if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add("was-validated");
+              } else {
+                form.classList.add("was-validated");
+                appendAlert(
+                  "¡Gracias por enviar tu consulta! Te responderemos pronto!!!",
+                  "success",
+                );
+              }
             },
             false,
           );

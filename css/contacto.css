@@ -29,14 +29,20 @@ textarea {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
-<<<<<<< HEAD
-=======
 .formulario {
   label {
     color: var(--color-secundario);
   }
 }
->>>>>>> 2c87cc65a2fce1c9ecfdeefb5e7f8c7c0897b1ef
+#alerta {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 998;
+  width: 90%;
+  max-width: 500px;
+}
 iframe {
   width: 100%;
 }
