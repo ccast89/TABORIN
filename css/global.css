@@ -19,3 +19,6 @@ h3 {
   font-family: var(--fuente-club);
   color: var(--color-secundario);
 }
+h1 {
+  font-size: 3rem;
+}
