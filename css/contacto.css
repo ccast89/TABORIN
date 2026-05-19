@@ -34,6 +34,15 @@ textarea {
     color: var(--color-secundario);
   }
 }
+#alerta {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 998;
+  width: 90%;
+  max-width: 500px;
+}
 iframe {
   width: 100%;
 }
