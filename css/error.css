@@ -29,12 +29,7 @@ main{
 }
 
 .tituloerror h1{
-    font-size: 6rem;
-    color: var(--color-secundario);
-}
-span{
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--color-secundario);
 }
 .ainicio{
