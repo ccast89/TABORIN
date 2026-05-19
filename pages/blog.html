@@ -49,10 +49,15 @@
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../pages/login.html"
+                <a class="nav-link" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./galeria.html"
+                  >Galería</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./login.html"
                   >Login</a
                 >
               </li>
@@ -66,10 +71,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
             </ul>
           </div>
@@ -79,6 +84,7 @@
       <div class="modal fade" id="registroModal" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
+            <!-- HEADER -->
             <div class="modal-header">
               <h5 class="modal-title">Formulario para Asociarse</h5>
 
@@ -88,18 +94,28 @@
                 data-bs-dismiss="modal"
               ></button>
             </div>
+
+            <!-- BODY -->
             <div class="modal-body p-4">
               <form class="needs-validation">
+                <!-- NOMBRE -->
                 <div class="mb-3">
                   <label class="form-label">Nombre completo</label>
+
                   <input type="name" class="form-control" required />
                 </div>
+
+                <!-- EMAIL -->
                 <div class="mb-3">
                   <label class="form-label">Email</label>
+
                   <input type="email" class="form-control" required />
                 </div>
+
+                <!-- PASSWORD -->
                 <div class="mb-3">
                   <label class="form-label">Contraseña</label>
+
                   <input
                     type="password"
                     class="form-control"
@@ -107,16 +123,23 @@
                     required
                   />
                 </div>
+
+                <!-- TELÉFONO -->
                 <div class="mb-3">
                   <label class="form-label">Teléfono</label>
                   <input type="tel" class="form-control" required />
                 </div>
+
+                <!-- CHECK -->
                 <div class="form-check mb-4">
                   <input class="form-check-input" type="checkbox" required />
+
                   <label class="form-check-label">
                     Estoy de acuerdo con recibir notificaciones por correo
                   </label>
                 </div>
+
+                <!-- BOTONES -->
                 <div class="d-flex gap-2">
                   <button
                     class="btn btn-success"
@@ -125,6 +148,7 @@
                   >
                     Registrarse
                   </button>
+
                   <button
                     class="btn btn-secondary"
                     type="button"

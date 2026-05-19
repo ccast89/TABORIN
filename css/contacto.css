@@ -4,37 +4,32 @@
   --color-detalles: #000000;
   --fuente-club: "Zilla Slab", serif;
 }
-body {
-  background-image: url(../assets/fondo.webp);
-  background-size: cover;
-}
-
 textarea {
   height: 20vh;
 }
-.btn {
+.boton {
   background-color: var(--color-secundario);
   color: var(--color-principal);
   border: 2px solid transparent;
   transition: all 0.2s ease;
 }
-.btn:hover {
+.boton:hover {
   background-color: var(--color-secundario);
   color: var(--color-detalles);
   border: 2px solid var(--color-principal);
 }
-.btn:active {
+.boton:active {
   transform: scale(0.95);
   background-color: var(--color-secundario);
 }
 
-form,
-.card {
+.formulario,
+.card-mapa {
   background: rgba(43, 45, 47, 0.2);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
-form {
+.formulario {
   label {
     color: var(--color-secundario);
   }
