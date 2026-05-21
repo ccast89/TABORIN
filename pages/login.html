@@ -17,212 +17,154 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
->
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <body>
     <header>
-    
-
-    </header>
-    
-    <main>
-      <div class="container-fluid login-container"></div>
-
-  <div class="row login-row">
-
-    <div class="col-lg-5 login-section">
-
-      <div class="login-box">
-
-        <h1 class="title mb-2">
-          Rugby Club
-        </h1>
-
-        <p class="subtitle">
-          Bienvenido nuevamente
-        </p>
-
-        <form>
-
-          <div class="mb-3">
-
-            <label class="form-label">
-              Email
-            </label>
-
-            <div class="input-group">
-
-              <span class="input-group-text">
-                <i class="bi bi-envelope-fill"></i>
-              </span>
-
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Ingrese su email"
-              >
-
-            </div>
-
-          </div>
-
-          <div class="mb-3">
-
-            <label class="form-label">
-              Contraseña
-            </label>
-
-            <div class="input-group">
-
-              <span class="input-group-text">
-                <i class="bi bi-lock-fill"></i>
-              </span>
-
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Ingrese su contraseña"
-              >
-
-            </div>
-
-          </div>
-
-          <div class="text-end mb-3">
-
-            <a
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#recoveryModal"
-            >
-              ¿Olvidaste tu contraseña?
-            </a>
-
-          </div>
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img class="logonav" src="../assets/logo.jpeg" alt=""
+          /></a>
           <button
+            class="navbar-toggler"
             type="button"
-            class="btn btn-login w-100 text-white mb-3"
-            onclick="window.location.href='error.html'"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            Ingresar
+            <span class="navbar-toggler-icon"></span>
           </button>
-
-        </form>
-
-        <div class="text-center text-secondary mb-3">
-          ───── o continuar con ─────
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./galeria.html"
+                  >Galería</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registroModal"
+                  >Asóciate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <button class="social-btn google"
-        onclick="window.location.href='error.html'">
+      <div class="modal fade" id="registroModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <!-- HEADER -->
+            <div class="modal-header">
+              <h5 class="modal-title">Formulario para Asociarse</h5>
 
-          <i class="bi bi-google"></i>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
 
-          Continuar con Google
+            <!-- BODY -->
+            <div class="modal-body p-4">
+              <form class="needs-validation">
+                <!-- NOMBRE -->
+                <div class="mb-3">
+                  <label class="form-label">Nombre completo</label>
 
-        </button>
+                  <input type="name" class="form-control" required />
+                </div>
 
-        <button class="social-btn facebook"
-        onclick="window.location.href='error.html'">
+                <!-- EMAIL -->
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
 
-          <i class="bi bi-facebook"></i>
+                  <input type="email" class="form-control" required />
+                </div>
 
-          Continuar con Facebook
+                <!-- PASSWORD -->
+                <div class="mb-3">
+                  <label class="form-label">Contraseña</label>
 
-        </button>
+                  <input
+                    type="password"
+                    class="form-control"
+                    minlength="6"
+                    required
+                  />
+                </div>
 
+                <!-- TELÉFONO -->
+                <div class="mb-3">
+                  <label class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" required />
+                </div>
+
+                <!-- CHECK -->
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" required />
+
+                  <label class="form-check-label">
+                    Estoy de acuerdo con recibir notificaciones por correo
+                  </label>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="d-flex gap-2">
+                  <button
+                    class="btn btn-success"
+                    type="submit"
+                    data-bs-dismiss="modal"
+                  >
+                    Registrarse
+                  </button>
+
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
-
-    <div class="col-lg-7 image-section"></div>
-
-  </div>
-
-</div>
-
-<div
-  class="modal fade"
-  id="recoveryModal"
-  tabindex="-1"
->
-
-  <div class="modal-dialog modal-dialog-centered">
-
-    <div class="modal-content">
-
-      <div class="modal-header">
-
-        <h5 class="modal-title">
-          Recuperar Contraseña
-        </h5>
-
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-        ></button>
-
-      </div>
-
-      <div class="modal-body">
-
-        <p>
-          Para recuperar tu contraseña sigue estos pasos:
-        </p>
-
-        <ol>
-          <li>
-            Ingresa el email asociado a tu cuenta.
-          </li>
-
-          <li>
-            Revisa tu bandeja de entrada.
-          </li>
-
-          <li>
-            Haz clic en el enlace enviado.
-          </li>
-
-          <li>
-            Crea una nueva contraseña.
-          </li>
-        </ol>
-
-        <p class="text-secondary">
-          Si no encuentras el correo revisa la carpeta spam.
-        </p>
-
-      </div>
-
-      <div class="modal-footer">
-
-        <button
-          type="button"
-          class="btn btn-success"
-          data-bs-dismiss="modal"
-        >
-          Entendido
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-    </main>
-    <footer>
-
-    </footer>
+    </header>
+    <main></main>
+    <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

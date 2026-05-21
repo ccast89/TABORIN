@@ -18,23 +18,21 @@ h3 {
   font-family: var(--fuente-club);
   color: var(--color-secundario);
 }
-
-.nav-link{
-    color: var(--color-principal);
-    font-weight: bold;
-    font-family: var(--fuente-club);
-    font-size: 18px;
-    margin-right: 20px;
-
+.nav-link {
+  color: var(--color-principal);
+  font-weight: bold;
+  font-family: var(--fuente-club);
+  font-size: 18px;
+  margin-right: 20px;
 }
-
-.logonav{
-    margin: 0px;
-    width: 60px;
-    padding: 0px;
-
+.logonav {
+  margin: 0px;
+  width: 60px;
+  padding: 0px;
 }
-.navbar{
-    background-color: var(--color-secundario) !important;
-    padding:10px 20px !important;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }

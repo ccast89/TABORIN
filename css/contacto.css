@@ -1,0 +1,48 @@
+:root {
+  --color-principal: #1b4d2e;
+  --color-secundario: #f5f5f5;
+  --color-detalles: #000000;
+  --fuente-club: "Zilla Slab", serif;
+}
+textarea {
+  height: 20vh;
+}
+.boton {
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.boton:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-detalles);
+  border: 2px solid var(--color-principal);
+}
+.boton:active {
+  transform: scale(0.95);
+  background-color: var(--color-secundario);
+}
+
+.formulario,
+.card-mapa {
+  background: rgba(43, 45, 47, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+.formulario {
+  label {
+    color: var(--color-secundario);
+  }
+}
+#alerta {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 998;
+  width: 90%;
+  max-width: 500px;
+}
+iframe {
+  width: 100%;
+}
