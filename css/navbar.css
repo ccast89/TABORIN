@@ -36,5 +36,5 @@ h3 {
 }
 .navbar{
     background-color: var(--color-secundario) !important;
-    
+    padding:10px 20px !important;
 }
