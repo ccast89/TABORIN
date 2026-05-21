@@ -109,7 +109,7 @@
                 <div class="mb-3">
                   <label class="form-label">Nombre completo</label>
 
-                  <input type="name" class="form-control" required />
+                  <input type="text" class="form-control" required />
                 </div>
 
                 <!-- EMAIL -->
@@ -189,7 +189,7 @@
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="nombre" class="form-label fw-bold">Nombre</label>
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"
+              <span class="input-group-text"
                 ><i class="bi bi-person-bounding-box"></i
               ></span>
               <input
@@ -209,7 +209,7 @@
               >Correo Electrónico</label
             >
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"
+              <span class="input-group-text"
                 ><i class="bi bi-envelope-at-fill"></i
               ></span>
               <input
@@ -226,15 +226,21 @@
           </div>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="telefono" class="form-label fw-bold">Teléfono</label>
-            <input
-              type="number"
-              class="form-control"
-              placeholder="Sin el 0 y sin el 15"
-              id="telefono"
-              aria-label="telefono"
-              autocomplete="tel"
-              required
-            />
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-telephone-fill"></i
+              ></span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Sin el 0 y sin el 15"
+                id="telefono"
+                aria-label="telefono"
+                autocomplete="tel"
+                maxlength="10"
+                required
+              />
+            </div>
             <div class="invalid-feedback">
               Ingresa un número de teléfono válido
             </div>
