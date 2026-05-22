@@ -194,7 +194,7 @@
               ></span>
               <input
                 type="text"
-                class="form-control"
+                class="form-control input-contacto"
                 placeholder="Nombre y Apellido"
                 id="nombre"
                 aria-label="Nombre"
@@ -214,7 +214,7 @@
               ></span>
               <input
                 type="email"
-                class="form-control"
+                class="form-control input-contacto"
                 placeholder="ejemplo@ejemplo.com"
                 id="email"
                 aria-label="email"
@@ -232,7 +232,7 @@
               ></span>
               <input
                 type="tel"
-                class="form-control"
+                class="form-control input-contacto"
                 placeholder="Sin el 0 y sin el 15"
                 id="telefono"
                 aria-label="telefono"
@@ -249,7 +249,12 @@
             <label for="asunto" class="form-label fw-bold"
               >Motivo de la consulta</label
             >
-            <select class="form-select" name="asunto" id="asunto" required>
+            <select
+              class="form-select input-contacto"
+              name="asunto"
+              id="asunto"
+              required
+            >
               <option selected disabled value="">Selecciona una opción</option>
               <option value="1">Plantel Masculino</option>
               <option value="2">Plantel Femenino</option>
@@ -264,7 +269,7 @@
             <textarea
               name="mensaje"
               id="mensaje"
-              class="form-control"
+              class="form-control input-contacto"
               placeholder="Dejá tu mensaje aquí y te responderemos"
               required
             ></textarea>
