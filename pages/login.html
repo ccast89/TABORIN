@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/login.css" />
-
   </head>
   <body>
     <header>
@@ -86,8 +85,7 @@
           </div>
         </div>
       </nav>
-
-       <div class="modal fade" id="registroModal" tabindex="-1">
+      <div class="modal fade" id="registroModal" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <!-- HEADER -->
@@ -168,196 +166,139 @@
           </div>
         </div>
       </div>
-
     </header>
     <main>
       <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 login-section">
+            <div class="login-box">
+              <h1 class="title mb-2">Rugby Club</h1>
 
-  <div class="row">
+              <p class="subtitle">Bienvenido nuevamente</p>
 
-    <div class="col-lg-5 login-section">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label"> Email </label>
 
-      <div class="login-box">
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-envelope-fill"></i>
+                    </span>
 
-        <h1 class="title mb-2">
-          Rugby Club
-        </h1>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Ingrese su email"
+                    />
+                  </div>
+                </div>
 
-        <p class="subtitle">
-          Bienvenido nuevamente
-        </p>
+                <div class="mb-3">
+                  <label class="form-label"> Contraseña </label>
 
-        <form>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-lock-fill"></i>
+                    </span>
 
-          <div class="mb-3">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Ingrese su contraseña"
+                    />
+                  </div>
+                </div>
 
-            <label class="form-label">
-              Email
-            </label>
+                <div class="text-end mb-3">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#recoveryModal"
+                  >
+                    ¿Olvidaste tu contraseña?
+                  </a>
+                </div>
 
-            <div class="input-group">
+                <button
+                  type="button"
+                  class="btn btn-login w-100 text-white mb-3"
+                  onclick="window.location.href = 'error.html'"
+                >
+                  Ingresar
+                </button>
+              </form>
 
-              <span class="input-group-text">
-                <i class="bi bi-envelope-fill"></i>
-              </span>
+              <div class="text-center text-secondary mb-3">
+                ───── o continuar con ─────
+              </div>
 
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Ingrese su email"
+              <button
+                class="social-btn google"
+                onclick="window.location.href = 'error.html'"
               >
+                <i class="bi bi-google"></i>
 
-            </div>
+                Continuar con Google
+              </button>
 
-          </div>
-
-          <div class="mb-3">
-
-            <label class="form-label">
-              Contraseña
-            </label>
-
-            <div class="input-group">
-
-              <span class="input-group-text">
-                <i class="bi bi-lock-fill"></i>
-              </span>
-
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Ingrese su contraseña"
+              <button
+                class="social-btn facebook"
+                onclick="window.location.href = 'error.html'"
               >
+                <i class="bi bi-facebook"></i>
 
+                Continuar con Facebook
+              </button>
             </div>
-
           </div>
 
-          <div class="text-end mb-3">
-
-            <a
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#recoveryModal"
-            >
-              ¿Olvidaste tu contraseña?
-            </a>
-
-          </div>
-
-          <button
-            type="button"
-            class="btn btn-login w-100 text-white mb-3"
-            onclick="window.location.href='error.html'"
-          >
-            Ingresar
-          </button>
-
-        </form>
-
-        <div class="text-center text-secondary mb-3">
-          ───── o continuar con ─────
+          <div class="col-lg-7 image-section"></div>
         </div>
-
-        <button class="social-btn google"
-        onclick="window.location.href='error.html'">
-
-          <i class="bi bi-google"></i>
-
-          Continuar con Google
-
-        </button>
-
-        <button class="social-btn facebook"
-        onclick="window.location.href='error.html'">
-
-          <i class="bi bi-facebook"></i>
-
-          Continuar con Facebook
-
-        </button>
-
       </div>
 
-    </div>
+      <div class="modal fade" id="recoveryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Recuperar Contraseña</h5>
 
-    <div class="col-lg-7 image-section"></div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
 
-  </div>
+            <div class="modal-body">
+              <p>Para recuperar tu contraseña sigue estos pasos:</p>
 
-</div>
+              <ol>
+                <li>Ingresa el email asociado a tu cuenta.</li>
 
-<div
-  class="modal fade"
-  id="recoveryModal"
-  tabindex="-1"
->
+                <li>Revisa tu bandeja de entrada.</li>
 
-  <div class="modal-dialog modal-dialog-centered">
+                <li>Haz clic en el enlace enviado.</li>
 
-    <div class="content-modal">
+                <li>Crea una nueva contraseña.</li>
+              </ol>
 
-      <div class="header-modal">
+              <p class="text-secondary">
+                Si no encuentras el correo revisa la carpeta spam.
+              </p>
+            </div>
 
-        <h5 class="modal-title">
-          Recuperar Contraseña
-        </h5>
-
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-        ></button>
-
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-dismiss="modal"
+              >
+                Entendido
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="modal-body">
-
-        <p>
-          Para recuperar tu contraseña sigue estos pasos:
-        </p>
-
-        <ol>
-          <li>
-            Ingresa el email asociado a tu cuenta.
-          </li>
-
-          <li>
-            Revisa tu bandeja de entrada.
-          </li>
-
-          <li>
-            Haz clic en el enlace enviado.
-          </li>
-
-          <li>
-            Crea una nueva contraseña.
-          </li>
-        </ol>
-
-        <p class="text-secondary">
-          Si no encuentras el correo revisa la carpeta spam.
-        </p>
-
-      </div>
-
-      <div class="footer-modal">
-
-        <button
-          type="button"
-          class="btn btn-success"
-          data-bs-dismiss="modal"
-        >
-          Entendido
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
     </main>
     <footer></footer>
     <script
