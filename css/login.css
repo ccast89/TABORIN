@@ -64,15 +64,15 @@
     }
 
     .form-control{
-      background:#1F2421;
+      background:#f5f7f6;
       border:none;
       color:white;
       padding:12px;
     }
 
     .form-control:focus{
-      background:#1F2421;
-      color:white;
+      background:#f9fcfa;
+      color:rgb(8, 0, 0);
 
       border:1px solid #74C69D;
 
@@ -160,17 +160,17 @@
 
     /* MODAL */
 
-    .modal-content{
-      background:#2B2D2F;
+    .content-modal{
+      background:#2b2d2f;
       color:white;
       border-radius:15px;
     }
 
-    .modal-header{
+    .header-modal{
       border-bottom:1px solid #444;
     }
 
-    .modal-footer{
+    .footer-modal{
       border-top:1px solid #444;
     }
 
