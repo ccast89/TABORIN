@@ -34,6 +34,10 @@ textarea {
     color: var(--color-secundario);
   }
 }
+.input-contacto:focus {
+  border-color: var(--color-detalles);
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Cambia el color del brillo/resplandor */
+}
 #alerta {
   position: fixed;
   top: 100px;

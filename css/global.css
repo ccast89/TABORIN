@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../assets/fondo.webp);
+  background-image: url(../assets/fondo-error.webp);
   background-size: cover;
 }
 h1,

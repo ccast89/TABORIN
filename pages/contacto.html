@@ -109,7 +109,7 @@
                 <div class="mb-3">
                   <label class="form-label">Nombre completo</label>
 
-                  <input type="name" class="form-control" required />
+                  <input type="text" class="form-control" required />
                 </div>
 
                 <!-- EMAIL -->
@@ -189,12 +189,12 @@
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="nombre" class="form-label fw-bold">Nombre</label>
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"
+              <span class="input-group-text"
                 ><i class="bi bi-person-bounding-box"></i
               ></span>
               <input
                 type="text"
-                class="form-control"
+                class="form-control input-contacto"
                 placeholder="Nombre y Apellido"
                 id="nombre"
                 aria-label="Nombre"
@@ -209,12 +209,12 @@
               >Correo Electrónico</label
             >
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"
+              <span class="input-group-text"
                 ><i class="bi bi-envelope-at-fill"></i
               ></span>
               <input
                 type="email"
-                class="form-control"
+                class="form-control input-contacto"
                 placeholder="ejemplo@ejemplo.com"
                 id="email"
                 aria-label="email"
@@ -226,15 +226,21 @@
           </div>
           <div class="col-12 col-md-6 mb-2 fw-bold">
             <label for="telefono" class="form-label fw-bold">Teléfono</label>
-            <input
-              type="number"
-              class="form-control"
-              placeholder="Sin el 0 y sin el 15"
-              id="telefono"
-              aria-label="telefono"
-              autocomplete="tel"
-              required
-            />
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-telephone-fill"></i
+              ></span>
+              <input
+                type="tel"
+                class="form-control input-contacto"
+                placeholder="Sin el 0 y sin el 15"
+                id="telefono"
+                aria-label="telefono"
+                autocomplete="tel"
+                maxlength="10"
+                required
+              />
+            </div>
             <div class="invalid-feedback">
               Ingresa un número de teléfono válido
             </div>
@@ -243,11 +249,16 @@
             <label for="asunto" class="form-label fw-bold"
               >Motivo de la consulta</label
             >
-            <select class="form-select" name="asunto" id="asunto" required>
+            <select
+              class="form-select input-contacto"
+              name="asunto"
+              id="asunto"
+              required
+            >
               <option selected disabled value="">Selecciona una opción</option>
-              <option value="1">Equipo Masculino</option>
-              <option value="2">Equipo Femenino</option>
-              <option value="3">Equipo Niños</option>
+              <option value="1">Plantel Masculino</option>
+              <option value="2">Plantel Femenino</option>
+              <option value="3">Plantel Juvenil y Niños</option>
               <option value="4">Otro</option>
             </select>
           </div>
@@ -258,7 +269,7 @@
             <textarea
               name="mensaje"
               id="mensaje"
-              class="form-control"
+              class="form-control input-contacto"
               placeholder="Dejá tu mensaje aquí y te responderemos"
               required
             ></textarea>
