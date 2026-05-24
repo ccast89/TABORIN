@@ -1,0 +1,67 @@
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+footer a:hover {
+    color: #2a9d8f !important;
+}
+
+footer h3,
+footer h5 {
+    color: #2a9d8f;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+footer a:hover {
+    color: #2a9d8f !important;
+}
+
+footer h3,
+footer h5 {
+    color: #2a9d8f;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.logofoot{
+    max-width: 100px;
+  width: 50%;
+  height: auto;
+} 
