@@ -12,6 +12,7 @@
 body {
   background-image: url(../assets/fondo-error.webp);
   background-size: cover;
+  font-family: var(--fuente-club);
 }
 h1,
 h2,
