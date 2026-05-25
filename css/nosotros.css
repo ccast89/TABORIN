@@ -10,29 +10,31 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--color-principal);
+  background-image: url(../assets/fondo-error.webp);
+  background-size: cover;
 }
 h1,
 h2,
-h3 {
+h3{
   font-family: var(--fuente-club);
   color: var(--color-secundario);
 }
-.nav-link {
-  color: var(--color-principal);
-  font-weight: bold;
+p{
   font-family: var(--fuente-club);
-  font-size: 18px;
-  margin-right: 20px;
 }
-.logonav {
-  margin: 0px;
-  width: 60px;
-  padding: 0px;
+h1 {
+  font-size: 3rem;
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+#cardnosotros{
+  height: 250px;
+  object-fit: cover;
+}
+@media(max-width: 580px){
+  
+.perfil-img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
 }
