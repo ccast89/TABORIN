@@ -66,3 +66,8 @@
     bottom: 10%;
   }
 }
+/*Tipografia y color texto */
+.noticia-blog{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
