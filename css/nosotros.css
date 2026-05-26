@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+main {
   background-image: url(../assets/fondo-error.webp);
   background-size: cover;
 }
@@ -25,11 +25,23 @@ p{
 h1 {
   font-size: 3rem;
 }
+.container{
+  min-height: 100vh;
+}
 #cardnosotros{
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#cardnosotros:hover{
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 @media(max-width: 580px){
+  h5{
+    font-size: 35px;
+  }
   
 .perfil-img{
   width: 180px;
