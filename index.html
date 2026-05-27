@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/principal.css "/>
+    <link rel="stylesheet" href="./css/principal.css " />
   </head>
   <body>
     <header>
@@ -181,111 +181,177 @@
 
     <main>
       <!-- CAROUSEL BOOTSTRAP -->
-<div id="sliderTaborin" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500">
+      <div
+        id="sliderTaborin"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5500"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
 
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#sliderTaborin" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#sliderTaborin" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#sliderTaborin" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#sliderTaborin" data-bs-slide-to="3"></button>
-  </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/masqueunclubunafamilia.jpeg"
+              class="d-block w-100"
+              alt="Familia"
+            />
+          </div>
 
-  <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./assets/scrum.jpeg" class="d-block w-100" alt="Rugby" />
+          </div>
 
-  <div class="carousel-item active">
-    <img src="./assets/masqueunclubunafamilia.jpeg"
-      class="d-block w-100" alt="Familia">
-  </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/todooverdeyblanco.jpeg"
+              class="d-block w-100"
+              alt="Todo verde y blanco"
+            />
+          </div>
 
-  <div class="carousel-item">
-    <img src="./assets/scrum.jpeg"
-      class="d-block w-100" alt="Rugby">
-  </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/historiaderesurreccion.jpeg"
+              class="d-block w-100"
+              alt="Historia"
+            />
+          </div>
+        </div>
 
-  <div class="carousel-item">
-    <img src="./assets/todooverdeyblanco.jpeg"
-      class="d-block w-100" alt="Todo verde y blanco">
-  </div>
-
-  <div class="carousel-item">
-    <img src="./assets/historiaderesurreccion.jpeg"
-      class="d-block w-100" alt="Historia">
-  </div>
-
-
-
-  </div>
-
-  <button class="carousel-control-prev" type="button"
-    data-bs-target="#sliderTaborin" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button"
-    data-bs-target="#sliderTaborin" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#sliderTaborin"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#sliderTaborin"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
 
       <!-- CONTENIDO: 2 COLUMNAS -->
       <div class="main-wrapper">
         <div class="container">
           <div class="row g-4">
+            <!-- COLUMNA 1: ENTRADAS -->
+            <div class="col-12 col-md-8">
+              <h2
+                class="mb-4"
+                style="
+                  color: var(--color-principal);
+                  font-family: var(--fuente-club);
+                  border-bottom: 3px solid #52b788;
+                  padding-bottom: 10px;
+                "
+              >
+                Últimas Entradas
+              </h2>
 
-           <!-- COLUMNA 1: ENTRADAS -->
-<div class="col-12 col-md-8">
-  <h2 class="mb-4" style="color: var(--color-principal); font-family: var(--fuente-club); border-bottom: 3px solid #52b788; padding-bottom: 10px;">
-    Últimas Entradas
-  </h2>
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/primera.jpeg"
+                  alt="Rugby"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Rugby</span>
+                  <div class="post-date">18 mayo 2026</div>
+                  <h3>Taborin goleó en el torneo regional de rugby</h3>
+                  <p>
+                    Nuestro equipo de primera división se impuso con autoridad
+                    ante los rivales del torneo regional, demostrando la gran
+                    preparación física y táctica del plantel esta temporada.
+                  </p>
+                  <a href="./pages/error.html" class="btn-ver-mas">Ver más →</a>
+                </div>
+              </article>
 
-  <article class="post-card">
-    <img class="post-card-img"
-      src="./assets/primera.jpeg"
-      alt="Rugby">
-    <div class="post-card-body">
-      <span class="post-cat">Rugby</span>
-      <div class="post-date">18 mayo 2026</div>
-      <h3>Taborin goleó en el torneo regional de rugby</h3>
-      <p>Nuestro equipo de primera división se impuso con autoridad ante los rivales del torneo regional, demostrando la gran preparación física y táctica del plantel esta temporada.</p>
-      <a href="pages/error.html"class="btn-ver-mas">Ver más →</a>
-    </div>
-  </article>
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/m16.jpeg"
+                  alt="Juveniles"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Juveniles</span>
+                  <div class="post-date">10 mayo 2026</div>
+                  <h3>Los juveniles de Taborin se consagran campeones</h3>
+                  <p>
+                    La categoría M16 del club se coronó campeona del torneo
+                    provincial tras una final épica que mantuvo a todos en vilo
+                    hasta el último minuto del partido.
+                  </p>
+                  <a href="./pages/blog.html#encuentro" class="btn-ver-mas"
+                    >Ver más →</a
+                  >
+                </div>
+              </article>
 
-  <article class="post-card">
-    <img class="post-card-img"
-      src="./assets/m16.jpeg"
-      alt="Juveniles">
-    <div class="post-card-body">
-      <span class="post-cat">Juveniles</span>
-      <div class="post-date">10 mayo 2026</div>
-      <h3>Los juveniles de Taborin se consagran campeones</h3>
-      <p>La categoría M16 del club se coronó campeona del torneo provincial tras una final épica que mantuvo a todos en vilo hasta el último minuto del partido.</p>
-      <a href="pages/error.html" class="btn-ver-mas">Ver más →</a>
-    </div>
-  </article>
-
-  <article class="post-card">
-    <img class="post-card-img"
-      src="./assets/rugbyfemenino.jpeg"
-      alt="Femenino">
-    <div class="post-card-body">
-      <span class="post-cat">Rugby Femenino</span>
-      <div class="post-date">2 mayo 2026</div>
-      <h3>El rugby femenino de Taborin sigue creciendo</h3>
-      <p>El equipo femenino del club sumó nuevas jugadoras esta temporada y se prepara para disputar su primer torneo oficial, consolidando el crecimiento del rugby femenino en Taborin.</p>
-      <a href="pages/error.html" class="btn-ver-mas">Ver más →</a>
-    </div>
-  </article>
-
-
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/rugbyfemenino.jpeg"
+                  alt="Femenino"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Rugby Femenino</span>
+                  <div class="post-date">2 mayo 2026</div>
+                  <h3>El rugby femenino de Taborin sigue creciendo</h3>
+                  <p>
+                    El equipo femenino del club sumó nuevas jugadoras esta
+                    temporada y se prepara para disputar su primer torneo
+                    oficial, consolidando el crecimiento del rugby femenino en
+                    Taborin.
+                  </p>
+                  <a
+                    href="./pages/blog.html#noticia-principal"
+                    class="btn-ver-mas"
+                    >Ver más →</a
+                  >
+                </div>
+              </article>
 
               <nav aria-label="Paginación">
                 <ul class="pagination">
                   <li class="page-item"><a class="page-link" href="#">‹</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item disabled"><span class="page-link">…</span></li>
+                  <li class="page-item disabled">
+                    <span class="page-link">…</span>
+                  </li>
                   <li class="page-item"><a class="page-link" href="#">8</a></li>
                   <li class="page-item"><a class="page-link" href="#">›</a></li>
                 </ul>
@@ -294,16 +360,28 @@
 
             <!-- COLUMNA 2: SIDEBAR -->
             <div class="col-12 col-md-4">
-
               <div class="sidebar-widget">
                 <h3 class="widget-title">Buscar noticias</h3>
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Ej: torneo, eventos…">
-                  <button class="btn" style="background: var(--color-principal); color:#fff;">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.2">
-                      <circle cx="11" cy="11" r="7"/>
-                      <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: torneo, eventos…"
+                  />
+                  <button
+                    class="btn"
+                    style="background: var(--color-principal); color: #fff"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                    >
+                      <circle cx="11" cy="11" r="7" />
+                      <line x1="16.5" y1="16.5" x2="22" y2="22" />
                     </svg>
                   </button>
                 </div>
@@ -312,27 +390,42 @@
               <div class="sidebar-widget">
                 <h3 class="widget-title">Categorías</h3>
                 <ul class="category-list">
-                  <li><a href="./pages/blog.html">Blog <span class="cat-count">14</span></a></li>
-                  <li><a href="./pages/contacto.html">Contacto <span class="cat-count">9</span></a></li>
-                  <li><a href="./pages/galeria.html">Galería <span class="cat-count">7</span></a></li>
-                  <li><a href="./pages/nosotros.html">Nosotros <span class="cat-count">5</span></a></li>
-               
+                  <li>
+                    <a href="./pages/blog.html#encuentro"
+                      >Plantel Masculino<span class="cat-count">14</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/blog.html#noticia-principal"
+                      >Plantel Femenino <span class="cat-count">9</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/error.html"
+                      >Juveniles<span class="cat-count">7</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/blog.html#infantiles"
+                      >Infantiles<span class="cat-count">5</span></a
+                    >
+                  </li>
                 </ul>
               </div>
 
               <div class="ad-widget">
                 <div class="ad-badge">Publicidad</div>
                 <h4>¿Querés anunciarte en Taborin?</h4>
-                <p>Llegá a toda nuestra comunidad. Espacios disponibles para socios y empresas locales.</p>
-                <a href="pages/error.html" class="btn-ad">Contactanos</a>
+                <p>
+                  Llegá a toda nuestra comunidad. Espacios disponibles para
+                  socios y empresas locales.
+                </p>
+                <a href="./pages/contacto.html" class="btn-ad">Contactanos</a>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-
-
     </main>
 
     <footer class="bg-dark text-light pt-5 pb-3">
