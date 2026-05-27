@@ -17,12 +17,503 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/principal.css " />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img class="logonav" src="./assets/logo.jpeg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/galeria.html"
+                  >Galería</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/login.html"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registroModal"
+                  >Asóciate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="registroModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <!-- HEADER -->
+            <div class="modal-header">
+              <h5 class="modal-title">Formulario para Asociarse</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- BODY -->
+            <div class="modal-body p-4">
+              <form class="needs-validation">
+                <!-- NOMBRE -->
+                <div class="mb-3">
+                  <label class="form-label">Nombre completo</label>
+
+                  <input type="text" class="form-control" required />
+                </div>
+
+                <!-- EMAIL -->
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+
+                  <input type="email" class="form-control" required />
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="mb-3">
+                  <label class="form-label">Contraseña</label>
+
+                  <input
+                    type="password"
+                    class="form-control"
+                    minlength="6"
+                    required
+                  />
+                </div>
+
+                <!-- TELÉFONO -->
+                <div class="mb-3">
+                  <label class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" required />
+                </div>
+
+                <!-- CHECK -->
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" required />
+
+                  <label class="form-check-label">
+                    Estoy de acuerdo con recibir notificaciones por correo
+                  </label>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="d-flex gap-2">
+                  <button
+                    class="btn btn-success"
+                    type="submit"
+                    data-bs-dismiss="modal"
+                  >
+                    Registrarse
+                  </button>
+
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- CAROUSEL BOOTSTRAP -->
+      <div
+        id="sliderTaborin"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5500"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sliderTaborin"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/masqueunclubunafamilia.jpeg"
+              class="d-block w-100"
+              alt="Familia"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/scrum.jpeg" class="d-block w-100" alt="Rugby" />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./assets/todooverdeyblanco.jpeg"
+              class="d-block w-100"
+              alt="Todo verde y blanco"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./assets/historiaderesurreccion.jpeg"
+              class="d-block w-100"
+              alt="Historia"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#sliderTaborin"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#sliderTaborin"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- CONTENIDO: 2 COLUMNAS -->
+      <div class="main-wrapper">
+        <div class="container">
+          <div class="row g-4">
+            <!-- COLUMNA 1: ENTRADAS -->
+            <div class="col-12 col-md-8">
+              <h2
+                class="mb-4"
+                style="
+                  color: var(--color-principal);
+                  font-family: var(--fuente-club);
+                  border-bottom: 3px solid #52b788;
+                  padding-bottom: 10px;
+                "
+              >
+                Últimas Entradas
+              </h2>
+
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/primera.jpeg"
+                  alt="Rugby"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Rugby</span>
+                  <div class="post-date">18 mayo 2026</div>
+                  <h3>Taborin goleó en el torneo regional de rugby</h3>
+                  <p>
+                    Nuestro equipo de primera división se impuso con autoridad
+                    ante los rivales del torneo regional, demostrando la gran
+                    preparación física y táctica del plantel esta temporada.
+                  </p>
+                  <a href="./pages/error.html" class="btn-ver-mas">Ver más →</a>
+                </div>
+              </article>
+
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/m16.jpeg"
+                  alt="Juveniles"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Juveniles</span>
+                  <div class="post-date">10 mayo 2026</div>
+                  <h3>Los juveniles de Taborin se consagran campeones</h3>
+                  <p>
+                    La categoría M16 del club se coronó campeona del torneo
+                    provincial tras una final épica que mantuvo a todos en vilo
+                    hasta el último minuto del partido.
+                  </p>
+                  <a href="./pages/blog.html#encuentro" class="btn-ver-mas"
+                    >Ver más →</a
+                  >
+                </div>
+              </article>
+
+              <article class="post-card">
+                <img
+                  class="post-card-img"
+                  src="./assets/rugbyfemenino.jpeg"
+                  alt="Femenino"
+                />
+                <div class="post-card-body">
+                  <span class="post-cat">Rugby Femenino</span>
+                  <div class="post-date">2 mayo 2026</div>
+                  <h3>El rugby femenino de Taborin sigue creciendo</h3>
+                  <p>
+                    El equipo femenino del club sumó nuevas jugadoras esta
+                    temporada y se prepara para disputar su primer torneo
+                    oficial, consolidando el crecimiento del rugby femenino en
+                    Taborin.
+                  </p>
+                  <a
+                    href="./pages/blog.html#noticia-principal"
+                    class="btn-ver-mas"
+                    >Ver más →</a
+                  >
+                </div>
+              </article>
+
+              <nav aria-label="Paginación">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">‹</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled">
+                    <span class="page-link">…</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item"><a class="page-link" href="#">›</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- COLUMNA 2: SIDEBAR -->
+            <div class="col-12 col-md-4">
+              <div class="sidebar-widget">
+                <h3 class="widget-title">Buscar noticias</h3>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: torneo, eventos…"
+                  />
+                  <button
+                    class="btn"
+                    style="background: var(--color-principal); color: #fff"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                    >
+                      <circle cx="11" cy="11" r="7" />
+                      <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="sidebar-widget">
+                <h3 class="widget-title">Categorías</h3>
+                <ul class="category-list">
+                  <li>
+                    <a href="./pages/blog.html#encuentro"
+                      >Plantel Masculino<span class="cat-count">14</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/blog.html#noticia-principal"
+                      >Plantel Femenino <span class="cat-count">9</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/error.html"
+                      >Juveniles<span class="cat-count">7</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/blog.html#infantiles"
+                      >Infantiles<span class="cat-count">5</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ad-widget">
+                <div class="ad-badge">Publicidad</div>
+                <h4>¿Querés anunciarte en Taborin?</h4>
+                <p>
+                  Llegá a toda nuestra comunidad. Espacios disponibles para
+                  socios y empresas locales.
+                </p>
+                <a href="./pages/contacto.html" class="btn-ad">Contactanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div
+          class="row align-items-center text-center text-md-start justify-content-md-between"
+        >
+          <!-- PRIMER COLUMNA - LOGO -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex justify-content-center justify-content-md-start"
+          >
+            <a href="#" class="logofoot">
+              <img
+                class="img-fluid"
+                src="./assets/logo.jpeg"
+                alt="Logo Club Taborin"
+              />
+            </a>
+          </div>
+
+          <!-- SEGUNDA COLUMNA - TEXTO -->
+          <div class="col-12 col-md-3 mb-4 text-md-center">
+            <h3 class="fw-bold">Taborin</h3>
+
+            <p class="mb-0">
+              Club deportivo y social dedicado al rugby y actividades
+              recreativas, más que un club somos una familia.
+            </p>
+          </div>
+
+          <!-- TERCERA COLUMNA - REDES -->
+          <div class="col-12 col-md-3 mb-4 text-center text-md-center">
+            <h5 class="fw-bold">Síguenos</h5>
+
+            <div
+              class="d-flex justify-content-center justify-content-md-center gap-3 mt-3"
+            >
+              <a
+                href="https://www.facebook.com/people/Club-Taborin-Oficial/100063614259091/"
+                target="_blank"
+                class="text-light fs-4"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/clubtaborinoficial/"
+                target="_blank"
+                class="text-light fs-4"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a
+                href="./pages/error.html"
+                class="text-light fs-4"
+                aria-label="WhatsApp"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+
+              <a
+                href="mailto:clubtaborin@gmail.com"
+                class="text-light fs-4"
+                aria-label="Email"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+
+            <div class="mt-3">
+              <p class="mb-1">📍 Camino 60 cuadras, km18, Córdoba, Argentina</p>
+
+              <p class="mb-0">📞 +54 381 1234567</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary" />
+
+        <div class="text-center">
+          <p class="mb-0">© 2026 TABORIN - Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

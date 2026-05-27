@@ -10,11 +10,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--color-principal);
+  background-image: url(../assets/fondo-error.webp);
+  background-size: cover;
+  font-family: var(--fuente-club);
 }
 h1,
 h2,
 h3 {
   font-family: var(--fuente-club);
   color: var(--color-secundario);
+}
+h1 {
+  font-size: 3rem;
 }
